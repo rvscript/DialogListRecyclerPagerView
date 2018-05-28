@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DialogListViewRecyclerView1</string>
+    <string name="hello_blank_fragment">Menu Fragment</string>
+    <string-array name="fragment_selector">
+        <item>Dialog Fragment</item>
+        <item>Dialog Fragment CodeTutor</item>
+        <item>ListView Fragment</item>
+        <item>RecyclerView Fragment</item>
+        <item>PageView Fragment</item>
+    </string-array>
+
+    <string-array name="fragment_detail">
+        <item>Display a dialog</item>
+        <item>Display a dialog using CodeTutor lecture</item>
+        <item>Display a custom ListView</item>
+        <item>Display a Recyclerview</item>
+        <item>Apply a PageView</item>
+    </string-array>
+</resources>
