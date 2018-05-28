@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.R;
-import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.fragments.Fragment1;
+import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.menu_list_view.Fragment1;
 
 public class HomeActivity extends AppCompatActivity {
     private FrameLayout mFragmentContainer;

@@ -1,4 +1,4 @@
-package com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.fragments;
+package com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.menu_list_view;
 
 import android.content.Context;
 import android.os.Build;

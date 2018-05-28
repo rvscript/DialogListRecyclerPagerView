@@ -1,4 +1,4 @@
-package com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.fragments;
+package com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.menu_list_view;
 
 
 import android.os.Build;
@@ -10,15 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.R;
-import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.model.CustomButton;
+import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.ui.recycler_view.RecyclerViewFragment;
 import com.example.ga_mlsdiscovery.dialoglistviewrecyclerview1.utility.AppUtility;
-
-import java.util.Set;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +55,31 @@ public class Fragment1 extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getContext(), "item: "+(position+1), Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case 0:
+                        Toast.makeText(getContext(), "item: " + (position + 1), Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(getContext(), "item: " + (position + 1), Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getContext(), "item: " + (position + 1), Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        Toast.makeText(getContext(), "RecyclerView", Toast.LENGTH_SHORT).show();
+                        getActivity()
+                                .getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.fragment_container, new RecyclerViewFragment())
+                                .addToBackStack("recyclerviewfragment")
+                                .commit();
+                        break;
+                    case 4:
+                        Toast.makeText(getContext(), "item: " + (position + 1), Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        Toast.makeText(getContext(), "No selection made", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         return v;

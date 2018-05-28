@@ -30,4 +30,5 @@ task clean(type: Delete) {
 ext {
     // App dependencies
     timberVersion = '4.5.1'
+    androidVersion= '27.1.1'
 }
