@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,7 @@ public class Fragment1 extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 switch (position) {
                     case 0:
                         Toast.makeText(getContext(), "item: " + (position + 1), Toast.LENGTH_SHORT).show();
@@ -67,10 +69,7 @@ public class Fragment1 extends Fragment {
                         break;
                     case 3:
                         Toast.makeText(getContext(), "RecyclerView", Toast.LENGTH_SHORT).show();
-                        getActivity()
-                                .getSupportFragmentManager()
-                                .beginTransaction()
-                                .replace(R.id.fragment_container, new RecyclerViewFragment())
+                        ft.replace(R.id.fragment_container, new RecyclerViewFragment())
                                 .addToBackStack("recyclerviewfragment")
                                 .commit();
                         break;
@@ -84,5 +83,6 @@ public class Fragment1 extends Fragment {
         });
         return v;
     }
+
 
 }

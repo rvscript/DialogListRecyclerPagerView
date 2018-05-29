@@ -34,8 +34,16 @@ dependencies {
     //design
     implementation "com.android.support:design:$rootProject.androidVersion"
 
+    //Gson
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
     //RecyclerView
     implementation "com.android.support:recyclerview-v7:$rootProject.androidVersion"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.loggingInterceptorVersion"
 
     //Timber
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"

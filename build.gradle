@@ -31,4 +31,7 @@ ext {
     // App dependencies
     timberVersion = '4.5.1'
     androidVersion= '27.1.1'
+    retrofitVersion= '2.4.0'
+    gsonVersion = '2.8.2'
+    loggingInterceptorVersion = '3.8.1'
 }

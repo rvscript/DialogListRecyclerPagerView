@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">DialogListViewRecyclerView1</string>
     <string name="hello_blank_fragment">Menu Fragment</string>
+    <string name="recycler_view_fragment">Recyclerview Example</string>
     <string-array name="fragment_selector">
         <item>Dialog Fragment</item>
         <item>Dialog Fragment CodeTutor</item>
