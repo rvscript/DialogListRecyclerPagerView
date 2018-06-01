@@ -34,8 +34,15 @@ dependencies {
     //design
     implementation "com.android.support:design:$rootProject.androidVersion"
 
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
     //Gson
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+
+    //okhttp3
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3Version"
 
     //RecyclerView
     implementation "com.android.support:recyclerview-v7:$rootProject.androidVersion"

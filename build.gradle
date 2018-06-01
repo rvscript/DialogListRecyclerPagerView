@@ -3,6 +3,8 @@
 buildscript {
     
     repositories {
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
         google()
         jcenter()
     }
@@ -34,4 +36,6 @@ ext {
     retrofitVersion= '2.4.0'
     gsonVersion = '2.8.2'
     loggingInterceptorVersion = '3.8.1'
+    glideVersion = '4.7.1'
+    okhttp3Version = '3.10.0'
 }
